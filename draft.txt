@@ -1,0 +1,56 @@
+- 1. Definição moderna de Ciência
+    - Ciência é a utilização do método científico por um agente que se auto observa
+    - “Ciência é método” é uma definição do século 17 pois não considera o agente
+    - Sem considerar o agente, qualquer IA faz ciência
+- 2. Teoria da medida
+    - O que é medir?
+    - Função injetora
+    - Sempre que você mede alguma coisa, você perde o objeto em si e fica com um atributo dele
+- 3. Dados no futebol
+    - O objetivo não é encontrar respostas, mas sim levantar perguntas
+    - Queremos diminuir o erro associado a decisões e gerar escala
+    - Por que uma IA não pode substituir o cientista de dados?
+- 4. Principais clientes de um Departamento de Dados
+    - Diretoria
+    - Técnico e auxiliares
+    - Análise de desempenho
+    - Scout
+    - Fisiologia
+- 5. Principais produtos de um Departamento de Dados
+    - Relatório pré-jogo (adversário)
+    - Relatório pós-jogo
+    - Controle físico
+    - Relatório de Scout
+- 6. Fontes de dados
+    - Dados comprados do mercado — todos os clubes possuem os mesmos dados
+    - Dados gerados pelo clube — o clube possui o dado, mas todos possuem a mesma tecnologia
+    - Métricas e análises criadas pelo clube — o dado e a inteligência são do próprio clube
+- 7. Principais provedores de dados
+    - Statsbomb
+    - Wyscout
+    - SkillCorner
+    - Genius
+    - Impect
+- 8. Dados de evento
+    - O que é um evento?
+      - Cada ação que acontece com a bola durante um jogo
+        - Passes
+        - Finalização
+        - Condução
+        - Dribles
+        - Duelos
+        - Pressão
+        - Interceptação
+      - Uma partida de 90 minutos normalmente possui entre 3 a 4 mil eventos
+- 9. Case
+    - Explorando uma base de eventos
+    - Construindo uma tabela descritiva
+      - finalizações
+        - partes do corpo
+        - dentro/fora da área
+      - xg
+      - dribles
+        - tentados/completos/porcentagem
+    - construindo um campo de ações (terço final)
+      - ggsoccer
+    - construir uma timeline de domínio
