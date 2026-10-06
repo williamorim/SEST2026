@@ -53,4 +53,5 @@
         - tentados/completos/porcentagem
     - construindo um campo de ações (terço final)
       - ggsoccer
-    - construir uma timeline de domínio
+    - construindo gráfico de volume de jogo
+      - https://www1.folha.uol.com.br/colunas/coluna-folha-stats/2026/07/afinal-o-que-e-o-grafico-de-momento.shtml
