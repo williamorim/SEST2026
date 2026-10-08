@@ -55,3 +55,11 @@
       - ggsoccer
     - construindo gráfico de volume de jogo
       - https://www1.folha.uol.com.br/colunas/coluna-folha-stats/2026/07/afinal-o-que-e-o-grafico-de-momento.shtml
+- 10. Jogos finitos vs jogos infinitos
+    - Definição jogos finitos
+        - Jogadores conhecidos, regras claras e conhecidas, existe uma definição precisa de quem é o vencedor
+    - Definição jogos infinitos
+        - Os jogadores não necessariamente conhecem todos os jogadores
+        - Novos jogadores podem entrar ao longo do jogo
+        - As regras não são claras e conhecidas por todos
+        - Não existe uma definição precisa de vitória

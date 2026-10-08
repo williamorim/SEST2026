@@ -1,0 +1,356 @@
+---
+title: "Ciência de dados no futebol"
+subtitle: "Minicurso · XIV Semana da Estatística · USP e UFSCar"
+author: "William Amorim"
+institute: "Clube de Regatas do Flamengo"
+date: "2026-10-27"
+date-format: "MMMM [de] YYYY"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: c/t
+    footer: "XIV Semana da Estatística · São Carlos · 2026"
+    transition: none
+    center-title-slide: true
+    center: false
+    menu: true
+    progress: true
+    controls: false
+    hash: true
+    width: 1280
+    height: 720
+    margin: 0.08
+---
+
+# 1. O que é ciência {.section-slide background-color="#1f2328"}
+
+## Uma definição do século 17
+
+::: {.destaque}
+**Ciência é método**
+:::
+
+::: {.incremental}
+- Observar, formular hipótese, testar, concluir
+- Instrumento objetivo de produção de conhecimento
+- **Problema**: quem executa os passos não faz parte da definição
+- Se ciência é apenas método, qualquer sistema capaz de executar os passos faz ciência
+:::
+
+## Uma definição moderna
+
+::: {.destaque}
+**Ciência é o uso do método científico por um agente que observa a si mesmo**
+:::
+
+. . .
+
+Isso significa que:
+
+::: {.incremental}
+- a aplicação do método possui um caráter subjetivo;
+- como o agente se autoobserva, a aplicação do método o transforma.
+:::
+
+. . . 
+
+O **futebol é cheio de crenças**. A auto-observação é fundamental para o processo de geração de conhecimento.
+
+# 2. O que é medir {.section-slide background-color="#1f2328"}
+
+## Teoria da medida
+
+::: {.formula}
+*f* : *F* → *A*
+:::
+
+- *F* é um conjunto de fenômenos.
+- *A* é um conjunto de atributos.
+
+## Toda medida perde o objeto
+
+Sempre que medimos alguma coisa, ficamos com um atributo e perdemos o objeto.
+
+| Objeto | O que a medida guarda | O que fica de fora |
+|---|---|---|
+| Um passe | Origem, destino, resultado | Intenção, opções descartadas, instrução do treinador |
+| Um jogador | Distância, sprints, passes | Leitura de jogo, comunicação, estado emocional |
+| Uma partida | 3 a 4 mil eventos | Tudo o que aconteceu longe da bola |
+
+## Consequências para quem analisa
+
+- O dado não é o jogo. É um conjunto de atributos do jogo, escolhidos por alguém, segundo regras.
+- Regras diferentes geram números diferentes para o mesmo jogo. Dois provedores não contam o mesmo número de duelos.
+- O agente da seção 1 é quem lembra o que ficou de fora.
+
+# 3. Dados no futebol {.section-slide background-color="#1f2328"}
+
+## O objetivo não é encontrar respostas
+
+- O futebol tem poucos gols, muita variância e amostras pequenas. Um clube joga entre 60 e 70 partidas por ano.
+- Respostas definitivas são raras. O que o dado faz bem é levantar perguntas.
+- "Por que esse time concede tantas finalizações pelo lado direito?" é uma pergunta útil. A resposta vem do vídeo e da conversa com a comissão técnica.
+- O dado indica onde olhar. O vídeo e a conversa com a comissão técnica continuam necessários.
+
+::: {.notes}
+Exemplo: uma métrica aponta que o adversário perde muitas bolas na saída pelo lado esquerdo. A métrica não diz por quê. O analista de desempenho vai ao vídeo e descobre se é o lateral, o volante ou o esquema de pressão que provoca isso.
+:::
+
+## Dois objetivos concretos
+
+**Reduzir o erro das decisões**
+
+- Contratar, escalar, substituir, planejar carga de treino.
+- O dado não elimina o erro. Reduz a chance de decidir com base na impressão de três jogos.
+
+**Gerar escala**
+
+- Um analista assiste a três jogos por dia. Um pipeline processa três mil.
+- Scouting em dezenas de ligas, monitoramento de centenas de jogadores, comparação com todos os adversários da temporada.
+
+## Por que uma IA não substitui o cientista de dados
+
+| Uma IA faz bem | O agente faz |
+|---|---|
+| Executar o método | Escolher a pergunta |
+| Produzir métricas e modelos | Saber o que a medida deixou de fora |
+| Responder ao que foi pedido | Negociar com o treinador o que vale a pena pedir |
+| Otimizar um objetivo dado | Definir o objetivo |
+
+Uma IA executa o método. O cientista de dados é o agente: sabe por que está perguntando, o que o dado não mostra e quem vai decidir com o resultado.
+
+Sem o agente, a IA produz análises que não respondem a nenhuma pergunta do clube.
+
+# 4. Clientes de um departamento de dados {.section-slide background-color="#1f2328"}
+
+## Quem usa o que produzimos {.smaller}
+
+| Cliente | O que decide | Horizonte |
+|---|---|---|
+| Diretoria | Contratações, renovações, orçamento, avaliação da comissão técnica | Meses a anos |
+| Técnico e auxiliares | Plano de jogo, escalação, substituições | Dias |
+| Análise de desempenho | Recortes de vídeo, padrões do adversário e do próprio time | Dias |
+| Scout | Lista de alvos, monitoramento, comparação com o elenco | Semanas a meses |
+| Fisiologia | Carga de treino, retorno de lesão, risco de lesão | Diário |
+
+## Cada cliente tem uma pergunta e uma linguagem
+
+- A diretoria pergunta "vale o investimento?".
+- O técnico pergunta "como o adversário sai jogando?".
+- A fisiologia pergunta "esse jogador aguenta 90 minutos?".
+- O mesmo dado responde a perguntas diferentes e precisa ser apresentado de formas diferentes.
+- O produto certo é o que chega no prazo da decisão, no formato que o cliente consegue usar.
+
+# 5. Produtos de um departamento de dados {.section-slide background-color="#1f2328"}
+
+## O que entregamos {.smaller}
+
+| Produto | Cliente principal | Conteúdo | Quando |
+|---|---|---|---|
+| Relatório pré-jogo (adversário) | Técnico, análise de desempenho | Formação, saída de bola, pressão, bolas paradas, jogadores-chave | Dias antes do jogo |
+| Relatório pós-jogo | Técnico, diretoria | O que aconteceu em relação ao esperado: xG, volume de jogo, mapa de ações | Até o dia seguinte |
+| Controle físico | Fisiologia, técnico | Distância, sprints, acelerações, carga acumulada | Diário |
+| Relatório de scout | Scout, diretoria | Perfil do jogador, comparação com o elenco, projeção, custo | Sob demanda |
+
+## Pré-jogo e pós-jogo
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Relatório pré-jogo**
+
+- Formação e variações ao longo do jogo.
+- Como o adversário sai jogando sob pressão e como pressiona.
+- Bolas paradas ofensivas e defensivas.
+- Jogadores que concentram as ações.
+- Tendências dos últimos jogos.
+:::
+
+::: {.column width="50%"}
+**Relatório pós-jogo**
+
+- O que o plano previa e o que aconteceu.
+- Finalizações e xG dos dois times.
+- Volume de jogo ao longo dos 90 minutos.
+- Mapa de ações por zona do campo.
+- Desempenho individual.
+:::
+
+::::
+
+## Um princípio para os produtos
+
+- Um relatório que não gera uma decisão ou uma pergunta não precisa existir.
+- O treinador lê o relatório entre um treino e outro. O relatório precisa ser curto e trazer o contexto necessário para a decisão.
+- O formato segue o cliente: tabela para o scout, vídeo com recorte para o técnico, série temporal para a fisiologia.
+
+# 6. Fontes de dados {.section-slide background-color="#1f2328"}
+
+## Três níveis {.smaller}
+
+| Nível | Quem tem o dado | Quem tem a tecnologia | Vantagem competitiva |
+|---|---|---|---|
+| Dados comprados do mercado | Todos os clubes | O provedor | Nenhuma. É o custo de entrada. |
+| Dados gerados pelo clube | O clube | O mesmo fornecedor de todos (GPS, câmeras) | Pequena. O dado é próprio, o método é comum. |
+| Métricas e análises criadas pelo clube | O clube | O clube | É onde está a diferença. |
+
+## Onde está a vantagem
+
+- **Mercado**: eventos, tracking, vídeo, dados físicos de jogo. Todos os concorrentes recebem os mesmos arquivos.
+- **Clube**: GPS de treino, testes físicos, dados médicos, avaliações de scouts. O dado é do clube, mas a tecnologia de coleta é a mesma dos outros.
+- **Inteligência do clube**: modelos e métricas construídos para o modelo de jogo do clube, combinando fontes que ninguém mais combina. Aqui o dado e a inteligência são do clube.
+
+::: {.notes}
+A conclusão prática: comprar dado é condição necessária, não suficiente. O que diferencia um departamento é o terceiro nível, e ele depende das pessoas, não dos contratos.
+:::
+
+# 7. Principais provedores {.section-slide background-color="#1f2328"}
+
+## Tipos de dado {.smaller}
+
+| Tipo | O que registra | Como é coletado |
+|---|---|---|
+| Eventos | Cada ação com a bola | Anotação humana assistida por software, a partir do vídeo |
+| Tracking | Posição de todos os jogadores e da bola, várias vezes por segundo | Câmeras no estádio ou visão computacional sobre a transmissão |
+| Físico | Distância, velocidade, acelerações | GPS e sensores vestíveis (treino e jogo) ou derivado do tracking |
+| Vídeo | A partida | Transmissão ou câmeras próprias |
+
+## Provedores {.smaller}
+
+| Provedor | Especialidade | Observações |
+|---|---|---|
+| StatsBomb (Hudl) | Dados de evento com especificação detalhada. O StatsBomb 360 adiciona a posição dos jogadores visíveis em cada evento. | Fundada em 2013. Comprada pela Hudl em 2024. |
+| Wyscout (Hudl) | Vídeo e eventos com ampla cobertura de ligas. Base de scouting. | Comprada pela Hudl em 2019. |
+| SkillCorner | Tracking a partir da transmissão de TV. Métricas físicas e táticas. | Fundada em 2015, em Paris. |
+| Genius Sports | Tracking óptico no estádio (Second Spectrum). Parceiro oficial da Premier League. | Second Spectrum adquirida em 2021. |
+| Impect | Eventos com foco em *packing*: quantos adversários uma ação supera. | Fundada por ex-jogadores da Bundesliga. |
+
+::: {.small-note}
+Outros provedores relevantes: Opta (Stats Perform), Sportec Solutions, Footovision.
+:::
+
+## O que muda entre provedores
+
+- As definições de evento são diferentes. Um duelo ou uma pressão não é a mesma coisa em duas bases.
+- O número de eventos, a precisão das coordenadas e a cobertura de ligas variam.
+- Misturar bases exige cuidado. As regras de medida (seção 2) mudam de uma para outra.
+
+# 8. Dados de evento {.section-slide background-color="#1f2328"}
+
+## O que é um evento
+
+- Cada ação que acontece com a bola durante a partida.
+- Passes, finalizações, conduções, dribles, duelos, pressões, interceptações, recuperações, faltas.
+- Uma partida de 90 minutos tem entre 3 e 4 mil eventos. A especificação da StatsBomb registra mais de 3.400 eventos por jogo.
+
+## Anatomia de um evento {.smaller}
+
+| minuto | segundo | time | jogador | tipo | x | y | x_fim | y_fim | resultado |
+|---|---|---|---|---|---|---|---|---|---|
+| 12 | 34 | A | Jogador 8 | Passe | 45,2 | 30,1 | 68,7 | 22,4 | Completo |
+| 12 | 36 | A | Jogador 11 | Condução | 68,7 | 22,4 | 80,1 | 15,0 | |
+| 12 | 39 | A | Jogador 11 | Finalização | 80,1 | 15,0 | | | Defendida |
+| 12 | 40 | B | Jogador 1 | Defesa | 118,0 | 40,0 | | | |
+
+Cada linha é um evento. Cada evento registra quem, quando, onde, o quê e com que resultado.
+
+Campos adicionais dependem do tipo: parte do corpo, altura do passe, se a ação foi sob pressão, xG da finalização.
+
+::: {.small-note}
+Exemplo ilustrativo. As coordenadas seguem o padrão da StatsBomb (campo de 120 por 80).
+:::
+
+## O que o dado de evento não contém
+
+- Onde estavam os outros 21 jogadores (exceto com tracking ou com o StatsBomb 360).
+- O que o jogador viu e descartou.
+- O que o treinador pediu.
+- Voltamos à seção 2: a medida guarda o atributo e perde o objeto.
+
+## Como o evento é produzido
+
+- Anotadores assistem ao vídeo e registram cada ação com apoio de software. Parte do processo é automatizada.
+- As coordenadas são estimadas a partir da imagem.
+- A qualidade varia por liga, por provedor e por tipo de evento.
+- Um evento é uma medida: alguém decidiu o que registrar e como.
+
+# 9. Case: explorando uma base de eventos {.section-slide background-color="#1f2328"}
+
+::: {.subtitle-text}
+Scripts em R
+
+- Exploração da base
+- Tabela descritiva: finalizações (parte do corpo, dentro e fora da área), xG, dribles (tentados, completos, porcentagem)
+- Campo de ações no terço final (ggsoccer)
+- Gráfico de volume de jogo
+:::
+
+# 10. Jogos finitos e jogos infinitos {.section-slide background-color="#1f2328"}
+
+## Duas definições (Carse, 1986)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Jogo finito**
+
+- Os jogadores são conhecidos.
+- As regras são claras e conhecidas por todos.
+- Existe uma definição precisa de quem venceu.
+- O jogo termina quando alguém vence.
+:::
+
+::: {.column width="50%"}
+**Jogo infinito**
+
+- Os jogadores não conhecem necessariamente todos os outros jogadores.
+- Novos jogadores podem entrar ao longo do jogo.
+- As regras não são claras nem conhecidas por todos, e podem mudar.
+- Não existe uma definição precisa de vitória. O objetivo é continuar jogando.
+:::
+
+::::
+
+::: {.notes}
+Carse: "um jogo finito é jogado para ser vencido; um jogo infinito é jogado para que o jogo continue." Sinek (2019) aplica a ideia a empresas.
+:::
+
+## O futebol contém os dois tipos de jogo
+
+- A partida é um jogo finito: 22 jogadores, regras fixas, 90 minutos, um resultado.
+- O clube joga um jogo infinito: concorrentes entram e saem, as regras do mercado mudam, não há um momento em que se vence de uma vez.
+- O departamento de dados também. Cada relatório é finito. O conhecimento acumulado é o jogo que continua.
+
+## O que isso muda para quem trabalha com dados
+
+- Um modelo otimiza um objetivo definido. Isso é um jogo finito.
+- Escolher o objetivo, mudar a pergunta e decidir o que construir é jogo infinito.
+- Esse é o papel do agente da seção 1. É o que uma IA, por enquanto, não faz.
+- As métricas de partida (resultado, xG) medem o jogo finito. As decisões importantes do clube acontecem no infinito.
+
+## Para encerrar
+
+1. Ciência é método aplicado por um agente que observa a si mesmo.
+2. Medir é trocar o objeto por um atributo. Lembrar do que ficou de fora é parte do trabalho.
+3. No futebol, o dado serve para levantar perguntas, reduzir erro e gerar escala.
+4. A vantagem competitiva está no que o clube constrói, não no que compra.
+5. Partidas são jogos finitos. Clubes, carreiras e ciência são jogos infinitos.
+
+## Referências {.smaller}
+
+- Bacon, F. (1620). *Novum Organum*.
+- Descartes, R. (1637). *Discours de la méthode*.
+- Stevens, S. S. (1946). On the theory of scales of measurement. *Science*, 103(2684), 677–680.
+- Krantz, D. H., Luce, R. D., Suppes, P. e Tversky, A. (1971). *Foundations of Measurement*, vol. 1. Academic Press.
+- von Foerster, H. (2003). *Understanding Understanding: Essays on Cybernetics and Cognition*. Springer.
+- Lu, C. et al. (2024). The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery. arXiv:2408.06292.
+- Carse, J. P. (1986). *Finite and Infinite Games*. Free Press.
+- Sinek, S. (2019). *The Infinite Game*. Portfolio.
+- Hudl (2024). Hudl strengthens its professional sports solutions with strategic acquisition of StatsBomb. Comunicado à imprensa.
+- Folha de S.Paulo, Folha Stats (2026). Afinal, o que é o gráfico de momento?
+
+## Contato
+
+William Amorim
+
+wamorim.estatistica@flamengo.com.br
