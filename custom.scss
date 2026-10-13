@@ -116,3 +116,52 @@ $code-block-bg: #f6f6f6;
 .reveal .slides section h2 {
   margin-bottom: 0.9em;
 }
+
+/* Exemplo da seção 2: girassol, setas e atributos */
+.reveal .exemplo-medida {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 480px;
+  margin-top: 0.3em;
+}
+
+.reveal .exemplo-medida .exemplo-imagem {
+  height: 480px;
+  width: auto;
+  margin: 0;
+}
+
+.reveal .exemplo-medida .exemplo-setas {
+  width: 220px;
+  height: 480px;
+  flex: none;
+}
+
+.reveal .exemplo-medida .exemplo-setas > path {
+  fill: none;
+  stroke: #1f2328;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.reveal .exemplo-medida .exemplo-setas marker path {
+  fill: #1f2328;
+  stroke: none;
+}
+
+.reveal .exemplo-medida .exemplo-rotulos {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  flex: none;
+}
+
+.reveal .exemplo-medida .exemplo-rotulos p {
+  position: absolute;
+  left: 12px;
+  margin: 0;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+  white-space: nowrap;
+}
