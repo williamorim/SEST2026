@@ -9,7 +9,7 @@
 <link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.33">
 
-  <meta name="author" content="William Amorim">
+  <meta name="author" content="William Amorim · @wamorim89">
   <title>Ciência de dados no futebol</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-5a39b194990dc8aa3d770c546fdf764c.css">
+  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-4feb64b0b28d1ed69729a17ca826d011.css">
   <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -133,7 +133,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-William Amorim 
+William Amorim · <span class="citation" data-cites="wamorim89">@wamorim89</span> 
 </div>
         <p class="quarto-title-affiliation">
             Clube de Regatas do Flamengo
@@ -148,20 +148,8 @@ William Amorim
 <h1>1. O que é ciência</h1>
 
 </section>
-<section id="uma-definição-do-século-17" class="slide level2">
-<h2>Uma definição do século 17</h2>
-<div class="destaque">
-<p><strong>Ciência é método</strong></p>
-</div>
-<ul>
-<li class="fragment">Observar, formular hipótese, testar, concluir</li>
-<li class="fragment">Instrumento objetivo de produção de conhecimento</li>
-<li class="fragment"><strong>Problema</strong>: quem executa os passos não faz parte da definição</li>
-<li class="fragment">Se ciência é apenas método, qualquer sistema capaz de executar os passos faz ciência</li>
-</ul>
-</section>
-<section id="uma-definição-moderna" class="slide level2">
-<h2>Uma definição moderna</h2>
+<section id="definição-moderna-de-ciência" class="slide level2">
+<h2>Definição moderna de ciência</h2>
 <div class="destaque">
 <p><strong>Ciência é o uso do método científico por um agente que observa a si mesmo</strong></p>
 </div>
@@ -201,6 +189,11 @@ William Amorim
     <p class="fragment" data-fragment-index="2" style="top: 261px;">Forma: arredondada</p>
   </div>
 </div>
+<div class="fragment">
+<div class="destaque">
+<p><strong>Não conseguimos voltar!</strong></p>
+</div>
+</div>
 </section>
 <section id="teoria-da-medida" class="slide level2">
 <h2>Teoria da medida</h2>
@@ -208,8 +201,8 @@ William Amorim
 <p><em>f</em> : <em>F</em> → <em>A</em></p>
 </div>
 <ul>
-<li><em>F</em> é um conjunto de fenômenos.</li>
-<li><em>A</em> é um conjunto de atributos.</li>
+<li><em>F</em> é um fenômeno.</li>
+<li><em>A</em> é um atributo.</li>
 </ul>
 <div class="fragment">
 <p><strong>O futebol possui uma característica especial</strong>: conseguimos observar (quase) todo o fenômeno para gerar atributos.</p>
@@ -223,46 +216,23 @@ William Amorim
 <section id="principais-objetivos-do-cientista-de-dados-no-futebol" class="slide level2">
 <h2>Principais objetivos do cientista de dados no futebol</h2>
 <ul>
-<li><p>Gerar informação de forma automatizada e reprodutível</p></li>
-<li><p>Sustentar decisões baseadas em dados</p></li>
-<li><p>Aumentar a escala do que é possível analisar</p></li>
-</ul>
-<aside class="notes">
+<li>Sustentar decisões com base nos dados
 <ul>
-<li>escanteios na primeira e segunda trave de cada time</li>
-<li>campanha deixa a bola rolar</li>
-<li>scout</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="clientes-de-um-departamento-de-dados" class="title-slide slide level1 section-slide center" data-background-color="#1f2328">
-<h1>4. Clientes de um departamento de dados</h1>
-
-</section>
-<section id="principais-clientes" class="slide level2">
-<h2>Principais clientes</h2>
+<li>Campanha “Deixa a bola rolar”</li>
+</ul></li>
+<li>Gerar informação de forma automatizada e reprodutível
 <ul>
-<li>Diretoria</li>
-<li>Técnico e auxiliares</li>
-<li>Análise de desempenho</li>
-<li>Scout</li>
-<li>Fisiologia</li>
+<li>Relatórios recorrentes ou não</li>
+</ul></li>
+<li>Aumentar a escala do que é possível analisar
+<ul>
+<li>Scouting</li>
+</ul></li>
 </ul>
 </section></section>
 <section>
 <section id="fontes-de-dados" class="title-slide slide level1 section-slide center" data-background-color="#1f2328">
-<h1>5. Fontes de dados</h1>
+<h1>4. Fontes de dados</h1>
 
 </section>
 <section id="três-níveis" class="slide level2 smaller">
@@ -296,11 +266,11 @@ William Amorim
 </section></section>
 <section>
 <section id="principais-provedores" class="title-slide slide level1 section-slide center" data-background-color="#1f2328">
-<h1>6. Principais provedores</h1>
+<h1>5. Principais provedores</h1>
 
 </section>
-<section id="tipos-de-dado" class="slide level2 smaller">
-<h2>Tipos de dado</h2>
+<section id="tipos-de-dado-de-provedores" class="slide level2 smaller">
+<h2>Tipos de dado de provedores</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 33%">
@@ -358,7 +328,7 @@ William Amorim
 </tr>
 <tr class="even">
 <td>Wyscout (Hudl)</td>
-<td>Vídeo e eventos com ampla cobertura de ligas. Base de scouting.</td>
+<td>Vídeo e eventos com ampla cobertura de ligas.</td>
 </tr>
 <tr class="odd">
 <td>SkillCorner</td>
@@ -366,18 +336,18 @@ William Amorim
 </tr>
 <tr class="even">
 <td>Genius Sports</td>
-<td>Tracking óptico no estádio (Second Spectrum). Parceiro oficial da Premier League.</td>
+<td>Tracking óptico no estádio.</td>
 </tr>
 <tr class="odd">
 <td>Impect</td>
-<td>Eventos com foco em <em>packing</em>: quantos adversários uma ação supera.</td>
+<td>Dados de evento e métricas táticas calculadas pela empresa.</td>
 </tr>
 </tbody>
 </table>
 </section></section>
 <section>
 <section id="dados-de-evento" class="title-slide slide level1 section-slide center" data-background-color="#1f2328">
-<h1>7. Dados de evento</h1>
+<h1>6. Dados de evento</h1>
 
 </section>
 <section id="o-que-é-um-evento" class="slide level2">
@@ -398,38 +368,30 @@ William Amorim
 </ul>
 </section></section>
 <section id="case-explorando-uma-base-de-eventos" class="title-slide slide level1 section-slide center" data-background-color="#1f2328">
-<h1>8. Case: explorando uma base de eventos</h1>
+<h1>7. Case: explorando uma base de eventos</h1>
 
 </section>
 
-<section>
-<section id="jogos-finitos-e-jogos-infinitos" class="title-slide slide level1 section-slide center" data-background-color="#1f2328">
-<h1>9. Jogos finitos e jogos infinitos</h1>
-
+<section id="a-área-no-brasil" class="title-slide slide level1 center">
+<h1>8. A área no Brasil</h1>
+<ul>
+<li><a href="https://salabufmg.github.io/">SALab</a>
+<ul>
+<li>FAME, em Belo Horizonte</li>
+<li>Acontece anualmente</li>
+<li>O desse ano já foi =/</li>
+</ul></li>
+<li><a href="https://ac3lab.github.io/">ACE Laboratory</a>
+<ul>
+<li>SAFE, no Rio de Janeiro</li>
+<li>Também acontece anualmente</li>
+<li>O desse ano vai acontecer na Data Fifa de novembro</li>
+</ul></li>
+</ul>
 </section>
-<section id="duas-definições" class="slide level2">
-<h2>Duas definições</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Jogo finito</strong></p>
-<ul>
-<li>Os jogadores são conhecidos.</li>
-<li>As regras são claras e conhecidas por todos.</li>
-<li>Existe uma definição precisa de quem venceu.</li>
-<li>O jogo termina quando alguém vence.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Jogo infinito</strong></p>
-<ul>
-<li>Os jogadores não conhecem necessariamente todos os outros jogadores.</li>
-<li>Novos jogadores podem entrar ao longo do jogo.</li>
-<li>As regras não são claras nem conhecidas por todos, e podem mudar.</li>
-<li>Não existe uma definição precisa de vitória. O objetivo é continuar jogando.</li>
-</ul>
-</div></div>
-</section></section>
+
 <section id="obrigado" class="title-slide slide level1 section-slide center" data-background-color="#1f2328">
-<h1>Obrigado</h1>
+<h1>9. Obrigado</h1>
 <p><strong>SRN</strong></p>
 
 </section>

@@ -1,7 +1,7 @@
 ---
 title: "Ciência de dados no futebol"
 subtitle: "Minicurso · XIV Semana da Estatística · USP e UFSCar"
-author: "William Amorim"
+author: "William Amorim  · @wamorim89"
 institute: "Clube de Regatas do Flamengo"
 date: "2026-10-27"
 date-format: "MMMM [de] YYYY"
@@ -24,20 +24,7 @@ format:
 
 # 1. O que é ciência {.section-slide background-color="#1f2328"}
 
-## Uma definição do século 17
-
-::: {.destaque}
-**Ciência é método**
-:::
-
-::: {.incremental}
-- Observar, formular hipótese, testar, concluir
-- Instrumento objetivo de produção de conhecimento
-- **Problema**: quem executa os passos não faz parte da definição
-- Se ciência é apenas método, qualquer sistema capaz de executar os passos faz ciência
-:::
-
-## Uma definição moderna
+## Definição moderna de ciência
 
 ::: {.destaque}
 **Ciência é o uso do método científico por um agente que observa a si mesmo**
@@ -81,14 +68,20 @@ O **futebol é cheio de crenças**. A auto-observação é fundamental para o pr
 </div>
 ```
 
+. . .
+
+::: {.destaque}
+**Não conseguimos voltar!**
+:::
+
 ## Teoria da medida
 
 ::: {.formula}
 *f* : *F* → *A*
 :::
 
-- *F* é um conjunto de fenômenos.
-- *A* é um conjunto de atributos.
+- *F* é um fenômeno.
+- *A* é um atributo.
 
 . . . 
 
@@ -98,29 +91,16 @@ O **futebol é cheio de crenças**. A auto-observação é fundamental para o pr
 
 ## Principais objetivos do cientista de dados no futebol
 
+- Sustentar decisões com base nos dados
+  - Campanha "Deixa a bola rolar"
+
 - Gerar informação de forma automatizada e reprodutível
+  - Relatórios recorrentes ou não
 
-- Sustentar decisões baseadas em dados
+- Aumentar a escala do que é possível analisar
+  - Scouting
 
-- Aumentar a escala do que é possível analisar 
-
-::: {.notes}
-- escanteios na primeira e segunda trave de cada time
-- campanha deixa a bola rolar
-- scout
-:::
-
-# 4. Clientes de um departamento de dados {.section-slide background-color="#1f2328"}
-
-## Principais clientes
-
-- Diretoria
-- Técnico e auxiliares
-- Análise de desempenho
-- Scout
-- Fisiologia
-
-# 5. Fontes de dados {.section-slide background-color="#1f2328"}
+# 4. Fontes de dados {.section-slide background-color="#1f2328"}
 
 ## Três níveis {.smaller}
 
@@ -130,9 +110,9 @@ O **futebol é cheio de crenças**. A auto-observação é fundamental para o pr
 | Dados gerados no clube | O clube | O provedor |
 | Métricas e análises criadas pelo clube | O clube | O clube |
 
-# 6. Principais provedores {.section-slide background-color="#1f2328"}
+# 5. Principais provedores {.section-slide background-color="#1f2328"}
 
-## Tipos de dado {.smaller}
+## Tipos de dado de provedores {.smaller}
 
 | Tipo | O que registra | Como é coletado |
 |---|---|---|
@@ -146,12 +126,12 @@ O **futebol é cheio de crenças**. A auto-observação é fundamental para o pr
 | Provedor | Especialidade | 
 |---|------|
 | StatsBomb (Hudl) | Dados de evento com especificação detalhada. O StatsBomb 360 adiciona a posição dos jogadores visíveis em cada evento. |
-| Wyscout (Hudl) | Vídeo e eventos com ampla cobertura de ligas. Base de scouting. |
+| Wyscout (Hudl) | Vídeo e eventos com ampla cobertura de ligas. |
 | SkillCorner | Tracking a partir da transmissão de TV. Métricas físicas e táticas. |
-| Genius Sports | Tracking óptico no estádio (Second Spectrum). Parceiro oficial da Premier League. |
-| Impect | Eventos com foco em *packing*: quantos adversários uma ação supera. |
+| Genius Sports | Tracking óptico no estádio. |
+| Impect | Dados de evento e métricas táticas calculadas pela empresa. |
 
-# 7. Dados de evento {.section-slide background-color="#1f2328"}
+# 6. Dados de evento {.section-slide background-color="#1f2328"}
 
 ## O que é um evento
 
@@ -166,34 +146,21 @@ O **futebol é cheio de crenças**. A auto-observação é fundamental para o pr
 - A qualidade varia por liga, por provedor e por tipo de evento.
 - Um evento é uma medida: alguém decidiu o que registrar e como.
 
-# 8. Case: explorando uma base de eventos {.section-slide background-color="#1f2328"}
+# 7. Case: explorando uma base de eventos {.section-slide background-color="#1f2328"}
 
-# 9. Jogos finitos e jogos infinitos {.section-slide background-color="#1f2328"}
+# 8. A área no Brasil
 
-## Duas definições
+- [SALab](https://salabufmg.github.io/)
+  - FAME, em Belo Horizonte
+  - Acontece anualmente
+  - O desse ano já foi =/
 
-:::: {.columns}
 
-::: {.column width="50%"}
-**Jogo finito**
+- [ACE Laboratory](https://ac3lab.github.io/)
+  - SAFE, no Rio de Janeiro
+  - Também acontece anualmente
+  - O desse ano vai acontecer na Data Fifa de novembro
 
-- Os jogadores são conhecidos.
-- As regras são claras e conhecidas por todos.
-- Existe uma definição precisa de quem venceu.
-- O jogo termina quando alguém vence.
-:::
-
-::: {.column width="50%"}
-**Jogo infinito**
-
-- Os jogadores não conhecem necessariamente todos os outros jogadores.
-- Novos jogadores podem entrar ao longo do jogo.
-- As regras não são claras nem conhecidas por todos, e podem mudar.
-- Não existe uma definição precisa de vitória. O objetivo é continuar jogando.
-:::
-
-::::
-
-# Obrigado {.section-slide background-color="#1f2328"}
+# 9. Obrigado {.section-slide background-color="#1f2328"}
 
 **SRN**
