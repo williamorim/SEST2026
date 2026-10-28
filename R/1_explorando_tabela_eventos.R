@@ -1,4 +1,5 @@
 # remotes::install_github("williamorim/kickoff")
+#https://github.com/williamorim/SEST2026
 
 library(kickoff)
 library(dplyr)
@@ -16,11 +17,11 @@ wc_2022 <- sb_competitions |>
 
 # Pegar as partidas
 wc_2022_matches <- kickoff::sb_open_matches(wc_2022)
-saveRDS(wc_2022_matches, "data/wc_2022_matches.rds")
+# saveRDS(wc_2022_matches, "data/wc_2022_matches.rds")
 
 # Pegar os eventos
 wc_2022_events <- kickoff::sb_open_events(wc_2022_matches)
-saveRDS(wc_2022_events, "data/wc_2022_events.rds")
+# saveRDS(wc_2022_events, "data/wc_2022_events.rds")
 
 # Pegar a final
 final_match <- wc_2022_matches |>
@@ -34,3 +35,7 @@ final_match_events <- wc_2022_events |>
 final_match_events |> 
   select(period, minute, second, location, team.name, player.name, type.name) |> 
   View()
+
+
+# wamorim@curso-r.com
+# @wamorim89
